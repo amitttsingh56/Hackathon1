@@ -1,0 +1,15 @@
+.venv/
+.venv311/
+.deps/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+.DS_Store
+dist/
+build/
+*.log
+*.csv
+!sample_transactions.csv
+*.json
+*.html

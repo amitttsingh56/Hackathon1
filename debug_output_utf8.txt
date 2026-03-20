@@ -1,0 +1,25 @@
+﻿Loading test transactions...
+Loaded 18 transactions.
+Graph stats: 18 nodes, 18 edges.
+Adding high degree noise to node P...
+Node P degree: 72
+Detecting cycles...
+DEBUG: Original graph nodes: 88
+DEBUG: Node A in-degree: 1, out-degree: 1
+DEBUG: Node B in-degree: 1, out-degree: 1
+DEBUG: Node C in-degree: 1, out-degree: 1
+DEBUG: Node D in-degree: 1, out-degree: 1
+DEBUG: Node E in-degree: 1, out-degree: 1
+DEBUG: Pruned nodes count: 17
+Found 4 cycle findings.
+ - cycle_3_5: ('O', 'M', 'N') (Score: 0.00)
+ - cycle_3_5: ('K', 'L', 'H', 'I', 'J') (Score: 1.00)
+ - cycle_3_5: ('A', 'B', 'C') (Score: 1.00)
+ - cycle_3_5: ('D', 'E', 'F', 'G') (Score: 1.00)
+
+Verification:
+ [PASS] Cycle ('A', 'B', 'C') found.
+ [PASS] Cycle ('H', 'I', 'J', 'K', 'L') found.
+ [FAIL] Cycle ('P', 'Q', 'R') NOT found.
+ [PASS] Cycle ('D', 'E', 'F', 'G') found.
+ [FAIL] Cycle ('M', 'N', 'O') (high variance) was found but should be filtered.
